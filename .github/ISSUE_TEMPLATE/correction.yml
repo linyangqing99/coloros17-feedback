@@ -1,0 +1,33 @@
+name: Report a correction
+description: Flag inaccurate, outdated or unclear information on coloros17.com.
+title: "Correction: "
+body:
+  - type: markdown
+    attributes:
+      value: "This is an independent information site. Issues are public; do not post passwords, IMEI numbers or personal account information."
+  - type: input
+    id: page
+    attributes:
+      label: Affected page URL
+      placeholder: https://coloros17.com/...
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: What needs correcting?
+      description: Quote the claim and explain what should change.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Supporting source
+      description: Link to an official announcement, support page or other evidence. Include publication date where available.
+    validations:
+      required: true
+  - type: input
+    id: context
+    attributes:
+      label: Device and region, if relevant
+      description: Include the model name and rollout region only. Do not share identifiers such as IMEI or serial numbers.
